@@ -117,7 +117,7 @@
         var d = duration - Math.floor((Date.now() - start_time) / 1000);
         d_left.text('Seconds left: ' + d);
 
-        if (d <= 119) {
+        if (d <= 0) {
           banner.find('.start').hide();
           banner.find('.end').show()
           correct_info.push([genned[0], genned[1], -1]);
