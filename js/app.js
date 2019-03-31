@@ -112,12 +112,14 @@
       problemGeng();
 
       var duration = options.duration || 120;
-      d_left.text('Seconds left: Hidden' ); //+ duration);
+      d_left.text('Seconds left:' + duration);
       var timer = setInterval(function() {
         var d = duration - Math.floor((Date.now() - start_time) / 1000);
-        d_left.text('Seconds left: Hidden'); //#+ d);
+        d_left.text('Seconds left: ' + d);
 
-        if (d <= 0) {
+        if (d <= 119) {
+          banner.find('.start').hide();
+          banner.find('.end').show()
           correct_info.push([genned[0], genned[1], -1]);
           var json = JSON.stringify(correct_info);
           answer.prop('disabled', true);
