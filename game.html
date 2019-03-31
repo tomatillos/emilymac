@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arithmetic Game – Online Speed Drill</title>
+    <link href="css/app.css" rel='stylesheet'>
+  </head>
+  <body>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    <script src = "js/app.js"></script>
+    <div id='game'>
+      <span class='left'>Seconds left :Hidden</span>
+      <span class='correct'>Score: 0</span>
+      <div class='banner'>
+        <div class='start'>
+          <span class='problem'></span>
+          =
+          <input class='answer'>
+        </div>
+        <div class='end'>
+          <p class='correct'>Score: 0</p>
+          <p>
+            <a href='/game?key=68dd89da'>Try again</a>
+            or <a href="/">change settings</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>Arithmetic.init({"add","sub","mul","div","add_left_min","add_left_max","add_right_min","add_right_max","mul_left_min","mul_left_max","mul_right_min","mul_right_max"});</script>
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4847317-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+  </body>
+</html>
+
+	
